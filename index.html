@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>furkan@coban.email</title>
+    <script>
+        function checkDomainAndShowMailOption() {
+            var currentDomain = window.location.hostname;
+            var targetDomain = "coban.email";
+            if (currentDomain === targetDomain) {
+                document.getElementById("mailtoLink").style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body onload="checkDomainAndShowMailOption()">
+    <a href="mailto:furkan@coban.email" id="mailtoLink" style="display:none;">furkan@coban.email</a>
+</body>
+</html>
